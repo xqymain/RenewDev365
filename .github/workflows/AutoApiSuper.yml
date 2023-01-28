@@ -3,7 +3,7 @@ name: Auto Api Super
 
 on:
   schedule:
-    - cron: "0 1,5,9 * * 1-6"
+    - cron: "0 2,6,10 * * 1-6"
   watch:
     types: [ started ]
 
@@ -17,7 +17,7 @@ jobs:
       - name: Set up Python #安装python
         uses: actions/setup-python@v4
         with:
-          python-version: 3.8
+          python-version: 3.9
       - name: Install requests #安装requests
         run: |
           pip install requests pycryptodome

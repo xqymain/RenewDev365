@@ -39,8 +39,8 @@ id_list = args[:args_len]
 secret_list = args[args_len:]
 aes = aescrypt(password,'ECB','','utf8')
 
-config_list = {'每次轮数': 6,
-               '是否启动随机时间': 'Y', '延时范围起始': 600, '结束': 1800,
+config_list = {'每次轮数': 12,
+               '是否启动随机时间': 'Y', '延时范围起始': 600, '结束': 1100,
                '是否开启随机api顺序': 'Y',
                '是否开启各api延时': 'Y', '分延时范围开始': 2, '分结束': 8}
 
